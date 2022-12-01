@@ -1,0 +1,46 @@
+{
+    "id": "teamwork",
+    "name": "Teamwork",
+    "schema": {
+        "teamwork.server.protocol": {
+            "text": "HTTP-Protocol",
+            "description": "HTTP-Protocol to use for the connection to the GIT-Repository",
+            "type": "dropdown",
+            "options": [
+                {
+                    "value": "http://",
+                    "text": "HTTP"
+                },
+                {
+                    "value": "https://",
+                    "text": "HTTPS"
+                }
+            ],
+            "default": "http://"
+        },
+        "teamwork.server.local": {
+            "text": "Local Working-Directory",
+            "description": "Local Path where the Remote-Data will be cached",
+            "type": "string",
+            "default": ""
+        },
+        "teamwork.server.remote": {
+            "text": "git URL",
+            "description": "URL to the git-Repository you want to use.",
+            "type": "string",
+            "default": ""
+        },
+        "teamwork.server.username": {
+            "text": "Username",
+            "description": "Username to access the git-Repository.",
+            "type": "string",
+            "default": ""
+        },
+        "teamwork.server.password": {
+            "text": "Password",
+            "description": "Password (if required) to access the git-Repository",
+            "type": "string",
+            "default": ""
+        }
+    }
+}
