@@ -1,0 +1,61 @@
+{
+    "menu": [
+        {
+            "id": "tools",
+            "submenu": [
+                {
+                    "label": "Teamwork",
+                    "id": "teamwork",
+                    "submenu": [
+                        {
+                            "label": "Test",
+                            "id": "helloworld.show-message",
+                            "command": "helloworld:show-message"
+                        },
+                        {
+                            "label": "Open Teamwork-Project...",
+                            "id": "teamwork.open",
+                            "command": "teamwork:open"
+                        },
+                        {
+                            "label": "Create Teamwork-Project",
+                            "id": "teamwork.create",
+                            "command": "teamwork:create"
+                        },
+                        {
+                            "type": "separator"
+                        },
+                        {
+                            "label": "Lock Teamwork-Project",
+                            "id": "teamwork.lock",
+                            "command": "teamwork:lock"
+                        },
+                        {
+                            "label": "Update Lock-Info",
+                            "id": "teamwork.lock.update",
+                            "command": "teamwork:lock-update"
+                        },
+                        {
+                            "type": "separator"
+                        },
+                        {
+                            "label": "Commit changes",
+                            "id": "teamwork.commit",
+                            "command": "teamwork:commit"
+                        },
+                        {
+                            "label": "Update Project",
+                            "id": "teamwork.update",
+                            "command": "teamwork:update"
+                        },
+                        {
+                            "label": "Configure Teamwork-Server",
+                            "id": "teamwork.configure",
+                            "command": "teamwork:configure"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -105,16 +105,13 @@
  *      NativeFileSystem.showOpenDialog(true, true, "Choose a file...", null, function(files) {}, function(err) {});
  */
 
-define(function (require, exports, module) {
-    "use strict";
+// var platformFileSystem;
+// var config = module.config();
+// if (config.filesystem == "html5") {
+//     platformFileSystem = require("./Html5FileSystem").Html5FileSystem;
+// }
+// else {
+// }
+platformFileSystem = require("./NativeFileSystem").NativeFileSystem;
 
-    var platformFileSystem;
-    var config = module.config();
-    if (config.filesystem == "html5"){
-        platformFileSystem = require("./Html5FileSystem").Html5FileSystem;
-    }
-    else{
-        platformFileSystem = require("./NativeFileSystem").NativeFileSystem;
-    }
-    exports.PlatformFileSystem  = platformFileSystem;
-});
+exports.PlatformFileSystem = platformFileSystem;
